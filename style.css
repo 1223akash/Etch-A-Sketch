@@ -1,0 +1,123 @@
+@font-face {
+    font-family: pixel;
+    src: url(Minecraft.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: pixel, sans-serif;;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    gap: 4px;
+}
+
+.heading {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    color: #f472b6;
+    font-size: 32px;
+}
+
+.size {
+    left: 15%;
+    width: 150px;
+}
+
+.normal {
+    top: 12%;
+    left: 15%;
+    width: 150px;
+    background: wheat;
+}   
+
+.rgb {
+    top: 20%;
+    left: 15%;
+    width: 150px;
+    background: linear-gradient(to right bottom,red, yellow, green);
+}
+
+.dark {
+    color: wheat !important;
+    top: 28%;
+    left: 15%;
+    width: 150px;
+    background: #44484d !important;
+}
+
+.reset {
+    left: 2%;
+    bottom: 2%;
+}
+
+.size, .normal, .rgb, .reset, .dark {
+    position: absolute;
+    color: #1f2937;
+    background-color: wheat;
+    font-size: 16px;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.normal:hover {
+    cursor: pointer;
+    scale: 0.9;
+}
+
+.rgb:hover {
+    cursor: pointer;
+    scale: 0.9;
+}
+
+.dark:hover {
+    cursor: pointer;
+    scale: 0.9;
+}
+
+.size:hover, .reset:hover {
+    cursor: pointer;
+    background-color: #737c8888;
+    color: wheat;
+    scale: 0.9;
+}
+
+.centerDiv {
+    width: 630px;
+    height: 630px;
+    background-color: #f472b51f;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.283), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.grids {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
